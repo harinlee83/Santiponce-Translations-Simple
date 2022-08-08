@@ -95,7 +95,7 @@ nav button:hover {
     color: white;
     background-color: rgb(20,153,142);
     text-align: center;
-    padding: 80px;
+    padding: 80px 0;
     font-size: 20px;
     min-width: 1200px;
 }
@@ -112,6 +112,7 @@ nav button:hover {
     grid-template-columns: auto auto auto;
     align-items: start;
     justify-items: center;
+    justify-content: center;
     margin: 0 auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
