@@ -9,36 +9,8 @@ nav {
     background-color: rgb(1,84,80);
     text-align: right;
     box-shadow: 0 3px 20px rgba(0,0,0, 0.2);
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0 auto;
-    font-size: 30px;
-}
-
-.nav-links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav-links li a{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: rgb(1,84,80);
-    transition: .8s;
-    padding: 10px;
-    background: white;
-    border-radius: 5%;
-}
-
-.nav-links li a:hover{
-    color: rgb(1,84,80);
-    background: white;
-    opacity: 0.8;
+    width: 100%;
+    min-width: 1200px;
 }
 
 .introduction {
@@ -46,21 +18,17 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
+    text-align: left;
     color: white;
-    min-width: 1100px;
     min-height: 600px;
-    padding: 80px;
+    padding: 10px 80px;
+    min-width: 1200px;
 }
 
 .introduction h1{
-    font-size:80px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.introduction img {
-    display: block;
-    margin: 20px auto;
+    font-size:100px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
 }
 
 .button-wrapper {
@@ -91,20 +59,27 @@ nav button:hover {
     color: white;
     text-align: center;
     padding: 80px;
+    min-width: 1200px;
 }
 
 .portfolio h1{
-    font-size: 50px;
+    font-size:50px;
+    font-family: 'Playfair Display', serif;
 }
 
-.portfolio .flex-container {
-    display: flex;
-    flex-wrap: wrap;
+.portfolio .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
-    align-items: flex-start;
+    grid-gap: 20px;
+    width: 70%;
     width: 70%;
     margin: 0px auto;
     padding: 30px 0;
+}
+
+.portfolio .grid-item {
+    margin: 0;
 }
 
 .video {
@@ -116,29 +91,18 @@ nav button:hover {
     opacity: 1;
 }
 
-.privacy {
-    background-image: radial-gradient(circle at 71.4697265625% 10.475260416666666%, #04ABA3 0%, 15.75%, rgba(4,171,163,0) 35%), radial-gradient(circle at 88.9599609375% 81.34114583333333%, #015450 0%, 32.5%, rgba(1,84,80,0) 65%), radial-gradient(circle at 58.8232421875% 11.051432291666668%, #025955 0%, 41.99999999999999%, rgba(2,89,85,0) 60%), radial-gradient(circle at 38.7548828125% 96.91080729166667%, #96FEF9 0%, 25%, rgba(150,254,249,0) 50%), radial-gradient(circle at 17.003580729166668% 58.362630208333336%, #3E3E3E 0%, 35%, rgba(62,62,62,0) 50%), radial-gradient(circle at 48.9013671875% 49.521484375%, #015450 0%, 100%, rgba(1,84,80,0) 100%);
-    color: white;
-    text-align: center;
-    padding: 80px;
-}
-
-.privacy h1, .privacy h2, .privacy p{
-    width: 60%;
-    margin: 30px auto;
-}
-
 .services {
     color: white;
     background-color: rgb(20,153,142);
-    min-width: 1100px;
     text-align: center;
     padding: 80px;
     font-size: 20px;
+    min-width: 1200px;
 }
 
 .services h1{
-    font-size: 50px;
+    font-size:50px;
+    font-family: 'Playfair Display', serif;
 }
 
 .services .grid-container {
@@ -181,6 +145,7 @@ nav button:hover {
     padding: 80px;
     background-color: rgb(57,127,119);
     text-align: center;
+    min-width: 1200px;
 }
 
 .about-us .grid-container {
@@ -217,10 +182,12 @@ nav button:hover {
     font: normal normal normal 15px/1.875em proxima-n-w01-reg,proxima-n-w05-reg,sans-serif;
     text-align: center;
     justify-content: center;
+    min-width: 1200px;
 }
 
 .get-in-touch h1{
-    font-size: 50px;
+    font-size:50px;
+    font-family: 'Playfair Display', serif;
 }
 
 .get-in-touch a{
@@ -238,7 +205,6 @@ nav button:hover {
 .white-overlay {
     background-color: white;
     padding: 40px;
-    min-width: 1100px;
 }
 
 footer {
@@ -246,4 +212,5 @@ footer {
     padding: 40px;
     background-color: rgb(1,84,80);
     text-align: center;
+    min-width: 1200px;
 }
