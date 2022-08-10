@@ -7,10 +7,14 @@
 
 nav {
     background-color: rgb(1,84,80);
-    text-align: right;
     box-shadow: 0 3px 20px rgba(0,0,0, 0.2);
+    font-family: 'Playfair Display', serif;
     width: 100%;
     min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .introduction {
@@ -30,10 +34,16 @@ nav {
     font-size:100px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
+    line-height: 1.1em;
+}
+
+.indent{
+    margin-left: 120px;
 }
 
 .button-wrapper {
     display:inline-block;
+    text-align: right;
 }
 
 nav button {
@@ -47,10 +57,14 @@ nav button {
     opacity: 1;
     transition: 0.3s;
     cursor: pointer;
-    margin: 30px;
     border-radius: 10%;
 }
 
+.nav-description h2{
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
 nav button:hover {
     opacity: 0.6
 }
@@ -71,10 +85,9 @@ nav button:hover {
 
 .portfolio .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     grid-gap: 20px;
-    width: 70%;
     width: 70%;
     margin: 0px auto;
     padding: 30px 0;
@@ -97,14 +110,14 @@ nav button:hover {
     color: white;
     background-color: rgb(20,153,142);
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 40px;
     font-size: 20px;
     min-width: 1200px;
     width: 100%;
 }
 
 .services h1{
-    font-size:50px;
+    font-size:40px;
     font-family: 'Playfair Display', serif;
 }
 
@@ -117,21 +130,12 @@ nav button:hover {
     justify-items: center;
     justify-content: center;
     margin: 0 auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
     width: 80%
 }
 
-.grid-container h2{
-    background-color: white;
-    color: rgb(1,84,80);
-    font-weight: bolder;
-    font-size: 20px;
-    padding: 10px;
-}
-
 .services .grid-item {
-    width: 300px;
+    width: 100%;
     opacity:0;
     transition: opacity 1.5s ease;
 }
