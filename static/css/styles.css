@@ -1,7 +1,7 @@
 :root {
-    --color-primary:rgb(1,84,80);
-    --color-secondary:rgb(20,153,142);
-    --color-tertiary: rgb(57,127,119);
+    --color-primary:#112D4E;
+    --color-secondary:#3F72AF;
+    --color-tertiary: #DBE2EF;
     --font-family-primary:
     --font-family-secondary:
   }
@@ -116,7 +116,7 @@ nav button:hover {
 
 .services {
     color: white;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
     text-align: center;
     padding: 40px 40px;
     font-size: 20px;
